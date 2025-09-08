@@ -1,0 +1,380 @@
+@font-face {
+    font-family: sevate;
+    src: url(Fonts/static/);
+}
+
+body {
+    color: #ededed;
+    background: #000;
+    font-family: sevate;
+
+}
+
+.folio:hover {
+    color: #0ef;
+    font-weight: bold;
+}
+
+.bgclr {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0px;
+    background: #000;
+    box-shadow: 3px 3px 20px #0ef;
+    z-index: 1;
+    color: #fff;
+}
+
+.navbar-toggler {
+    color: #000;
+    background: #0ef;
+}
+
+.bgcl {
+    background: black;
+}
+
+.lnks a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    animation: slideleft 2s ease forwards;
+
+
+}
+
+.lnks li a:hover {
+    color: aqua;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+.headtxt h1 {
+    animation: slideleft 2s ease forwards;
+}
+
+@keyframes slideleft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.headtxt h5 {
+    animation: slidetop 2s ease forwards;
+
+}
+
+@keyframes slidetop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.social {}
+
+.social a {
+    font-size: 30px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    color: #0ef;
+    width: 50px;
+    display: flex;
+    height: 50px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px #0ef;
+    animation: slideRight 3s ease forwards;
+}
+
+.social a:hover {
+    background: #0ef;
+    color: #000;
+    border: 2px solid black;
+
+}
+
+.btN {
+    background: #0ef;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.423),
+        0 0 10px white;
+    animation: slidebtn 3s ease forwards;
+
+}
+
+@keyframes slidebtn {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.txt {
+    color: #0ef;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.imag img {
+    width: 500px;
+    height: 500px;
+    border: 5px solid rgba(0, 255, 255, 0.951);
+    box-shadow: 0 0 25px rgb(236, 4, 236),
+        0 0 25px aqua,
+        0 0 50px rgb(236, 4, 236), 0 0 100px aqua;
+}
+
+.imagg img {
+    width: 300px;
+    height: 300px;
+    border: 5px solid rgba(0, 255, 255, 0.951);
+    box-shadow: 0 0 25px rgb(236, 4, 236),
+        0 0 25px aqua,
+        0 0 50px rgb(236, 4, 236), 0 0 100px aqua;
+}
+
+.imagg img {
+    transform-style: preserve-3d;
+    animation: move3d 3s infinite alternate ease-in-out;
+    border-radius: 20px;
+}
+
+@keyframes move3d {
+    0% {
+        transform: translate3d(100px, -50px, 100px);
+    }
+
+    100% {
+        transform: translate3d(-100px, 50px, -100px) rotate(360deg);
+    }
+}
+
+.brd {
+    border: none;
+    background: none;
+
+
+}
+
+.icon {
+    background: none;
+    color: #ededed;
+    box-shadow: 0 0 20px blue,
+        0 0 10px purple;
+    border-radius: 20px;
+    border: 3px solid #0ef;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.iconn {
+    background: none;
+    color: #ededed;
+    box-shadow: 0 0 20px blue,
+        0 0 10px purple;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.iconn i {
+    font-size: 50px;
+    color: #0ef;
+    padding: 20px 0;
+
+}
+
+.para {
+    font-size: 15px;
+}
+
+span {
+    color: #0ef;
+}
+
+.imgg img {
+    height: 250px;
+    border-radius: 15px;
+    filter: brightness(20%);
+    transition: 2s;
+    border: 2px solid black;
+
+
+
+}
+
+.imgg img:hover {
+    filter: brightness(100%);
+    height: 300px;
+    box-shadow: 0 0 40px rgb(0, 217, 255),
+        0 0 30px purple;
+    cursor: grab;
+
+
+}
+
+.line {
+    text-shadow: 0 0 80px rgba(238, 237, 228, 0.893),
+        0 0 50px rgb(235, 228, 235);
+
+}
+
+.icon a {
+    color: #0ef;
+}
+
+.headingtxt h1 {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    animation: slideRight 1s ease forwards;
+
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .imag img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.contact-list .clr i {
+    color: #0ef;
+    margin-right: 10px;
+
+
+
+
+}
+
+.contact-list {
+    list-style: none;
+    margin: 40px 0px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.contact-text h1 {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+    animation: slideRight 1s ease forwards;
+
+}
+
+.contact-text h4 {
+    margin: 20px 0;
+    color: #ededed;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-text p {
+    color: #ededede3;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.contact-list li a:hover {
+    transform: scale(1.10) translateY(-5px);
+    color: #0ef;
+
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+textarea {
+    height: 200px;
+
+}
+
+.txtarea textarea {
+    background: transparent;
+}
+
+.txtarea textarea:focus {
+    background: rgba(0, 238, 255, 0.825);
+    box-shadow: 0 0 20px rgb(0, 217, 255),
+        0 0 30px rgba(238, 234, 238, 0.764);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.txtarea textarea::placeholder {
+    color: #fff;
+}
+
+.frm input {
+    background: transparent;
+}
+
+.frm input::placeholder {
+    color: #fff;
+
+
+}
+
+.frm input:focus {
+    background: rgba(0, 238, 255, 0.825);
+    box-shadow: 0 0 20px rgb(0, 217, 255),
+        0 0 30px rgba(238, 234, 238, 0.764);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fotr {
+    box-shadow: 0 0 20px rgb(0, 217, 255),
+        0 0 30px purple;
+    background: transparent;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
